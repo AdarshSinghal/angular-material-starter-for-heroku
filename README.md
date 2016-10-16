@@ -10,7 +10,7 @@ Follow these simple steps:-
 3) Log in to your Heroku account by using the command in Heroku CLI.
   <pre>$ heroku login</pre>
 4) Open the Command Window from your project location and clone the repository. Type the following into Heroku CLI.
-<pre>$ heroku git:clone -a your_new_heroku_app_name</pre>
+<pre>$ heroku git:remote -a your_new_heroku_app_name</pre>
 5) Make some changes to the code you just cloned and deploy them to Heroku using Git.
 
   <pre>$ git add .
