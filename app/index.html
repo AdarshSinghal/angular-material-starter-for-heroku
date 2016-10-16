@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular-Material-Heroku-Starter</title>
+        <link rel="stylesheet" href="bower_components\angular-material\angular-material.css">
+        <link rel="stylesheet" href="css\main.css">
+    </head>
+    <body ng-app="myApp" layout="column">
+
+        <md-toolbar flex class="md-toolbar-tools">
+            <div flex>
+                <h1 style="text-align:center">Angular Material - Starter App</h1>
+            </div>
+
+        </md-toolbar>
+
+        <!-- Container #2 -->
+        <div layout="row" flex>
+            <!-- Container #3 -->
+            <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp md-sidenav-left" md-component-id="left">
+
+                <md-tabs md-dynamic-height md-border-bottom>
+                    <md-tab label="one">
+                        <md-content class="md-padding">
+                            Mango
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="two">
+                        <md-content class="md-padding">
+                            Apple
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="three">
+                        <md-content class="md-padding">
+                            Lichi
+                        </md-content>
+                    </md-tab>
+                </md-tabs>
+
+            </md-sidenav>
+
+            <!-- Container #4 -->
+            <md-content id="content" flex>
+                <div layout="row">
+                    <div flex></div>
+
+                    <div layout="column" flex>
+                        <div ng-repeat="i in ['JavaScript','EcmaScript','TypeScript']">
+                            <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+                                <md-card-title>
+                                    <md-card-title-text>
+                                        <span class="md-headline">{{i}}</span>
+                                    </md-card-title-text>
+                                </md-card-title>
+                            </md-card>
+                            <md-divider ng-if="!$last"></md-divider>
+                        </div>
+                    </div>
+
+                    <div flex></div>
+                </div>
+
+            </md-content>
+
+        </div>
+
+        <script type="text/javascript" src="bower_components\angular\angular.js"></script>
+        <script type="text/javascript" src="bower_components\angular-animate\angular-animate.js"></script>
+        <script type="text/javascript" src="bower_components\angular-aria\angular-aria.js"></script>
+        <script type="text/javascript" src="bower_components\angular-messages\angular-messages.js"></script>
+        <script type="text/javascript" src="bower_components\angular-route\angular-route.js"></script>
+        <script type="text/javascript" src="bower_components\angular-material\angular-material.js"></script>
+        <script type="text/javascript" src="bower_components\angular-material-icons\angular-material-icons.js"></script>
+        <script type="text/javascript" src="js\main.js"></script>
+
+    </body>
+</html>
