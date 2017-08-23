@@ -1,5 +1,5 @@
 # angular-material-starter-for-heroku
-This app is skeleton for Angular Material App which is easily deployable in heroku. All you need to do is just clone this repository &amp; deploy in heroku.
+The direct deployment of angular material app in heroku is not possible because the build-pack isn't present. So, we've to deploy it as nodejs app. This repository make it possible to quick start creating angular material app & deploy that in heroku. This app is skeleton for Angular Material App which is easily deployable in heroku. All you need to do is just clone this repository &amp; deploy in heroku.
 
 Follow these simple steps:-
 
